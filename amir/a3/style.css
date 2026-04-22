@@ -1,0 +1,72 @@
+table,td,th { 
+border: 2px solid white;
+padding: 5px;
+background:rgba(0,0,0, 0.5);
+
+
+}
+
+td, th {
+
+  text-align: center;
+}
+
+body {
+background-color: black;
+color:white;
+background-image: url("https://2.bp.blogspot.com/-ZupOUlwkioY/XEQG-0Yqt9I/AAAAAAAAA6c/f2X7fSM7FXUIOqUgtybgPjJBJmWv9ImEwCKgBGAs/w0/minimalist-night-city-buildings-23-4k.jpg");
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1500px;
+}
+
+
+
+a {
+color:yellow;
+
+}
+
+h1 {
+  color: cyan;
+}
+
+h2 {
+  color: cyan;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a:hover {
+  color: black;
+  background-color: lightgrey;
+}
+
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+img {
+  width: 100px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz A4</title>
+    <link rel="icon" type="image/x-icon" href="quiz.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h2> Quiz </h2>
+    <form>
+      <label>
+        <div>Where does the &lt;Script&gt; usually go?</div>
+      </label>
+      <input type="radio" name="group">
+      <label>The start</label>
+      <br>
+      <input type="radio" name="group">
+      <label>Wherever, it does not matter</label>
+      <br>
+      <input type="radio" name="group">
+      <label>The middle</label>
+      <br>
+      <input type="radio" name="group" id="correct1">
+      <label>The end</label>
+      <br>
+      <input type="reset">
+    </form>
+    <br>
+    
+    <form>
+      <label>
+        <div>For what reason?</div>
+      </label>
+      <select id="option2">
+        <option value=" " id="blank2"></option>
+        <option value="for loading purposes" id="correct2">for loading purposes</option>
+        <option value="just because">just because</option>
+        <option value="because its easier to read the code">because its easier to read the code</option>
+        <option value="because it makes the code look better">because it makes the code look better</option>
+      </select>
+      <br>
+      <input type="reset">
+    </form>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+
+    <br> <br>
+    <hr>
+    <h2>Cookie clicker</h2>
+    <p>Click <a href="cookie.html">here</a> to play Cookie Clicker. </p>
+
+    <script>
+      function checkRadio() {
+        var correct1Selected = document.getElementById("correct1").checked;
+        var correct2Selected = document.getElementById("correct2").selected;
+        if (correct1Selected == true && correct2Selected == true) {
+          alert("Correct!");
+        }
+        if (correct1Selected == false && correct2Selected == true) {
+          alert("So close, but wrong place!");
+        }
+        if (correct1Selected == true && correct2Selected == false) {
+          alert("So close, but wrong reason!");
+        }
+        if (correct1Selected == false && correct2Selected == false) {
+          alert("Incorrect, try again");
+        }
+      }
+    </script>
+  </body>
+</html>

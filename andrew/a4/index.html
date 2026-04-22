@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<div class="quiz">
+<h2>HTML/CSS Quiz</h2>
+<br>
+<form>
+<!--ask at least one question related to HTML/CSS/JS-->
+	<label style="font-size:20px;">What is the proper tag for a table head?</label> 
+    <br>
+	<select id="question">
+		<option value="tr">tr</option>
+		<option value="th">th</option>
+		<option value="td">td</option>
+		<option value="head">head</option>
+	</select>
+    <input type="button" value="OK" onclick="checkTag();">
+    <input type="reset">
+    <p id="answerDisplay"></p>
+</form>
+
+<br>
+
+<form>
+    <label style="font-size:20px;">What input type do you need to make a question like this?</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>input type=<q>radio</q></label>
+    <br>
+    <input type="radio" name="group">
+    <label>input type=<q>dropdown</q></label>
+    <br>
+    <input type="radio" name="group">
+    <label>input type=<q>checkbox</q></label>
+    <br>
+     <input type="radio" name="group">
+    <label>input type=<q>text</q></label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+    <p id=answerDisplay2></p>
+</form>
+
+<br>
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+</div>
+<script>
+	function checkTag() {
+		var answer = document.getElementById("question").value;
+    // alert(car);
+    document.getElementById('answerDisplay').innerHTML = "The answer is not " + answer + ", try again.";
+    if (answer == "th") { 
+        document.getElementById('answerDisplay').innerHTML = "The answer is  " + answer + ", good job.";; }
+	}
+
+	function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+    	document.getElementById('answerDisplay2').innerHTML = "This answer is " + document.getElementById("correctAnswer").checked + ", good job.";
+    }
+    else {
+        document.getElementById('answerDisplay2').innerHTML = "This answer is " + document.getElementById("correctAnswer").checked + ", try again.";
+    }
+}
+
+</script>
+</body>
+</html>

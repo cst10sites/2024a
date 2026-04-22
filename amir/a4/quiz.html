@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">	
+<title>Quiz</title>
+<link rel="stylesheet" href = "style.css"> 
+<link rel="shortcut icon" type="ico" href="favicon.ico">
+</head>
+<body>
+	<h1>HTML/CSS/JS Quiz</h1>
+<form>
+   <label>Select the correct line of code for a line break</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer"><!--name="group" allow us to select ONE-->
+    <label>br</label>
+    <br>
+    <input type="radio" name="group">
+    <label>brk</label>
+    <br>
+    <input type="radio" name="group">
+    <label>break</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+<br>
+<form>
+  <label>What line of code is used to display an image?</label>
+    <select id="codeOption">
+        <option value="im">&lt;im&gt;</option>    
+        <option value="ima">&lt;ima&gt;</option>
+        <option value="img">&lt;img&gt;</option>
+        <option value="ige">&lt;ige&gt;</option>
+
+    </select>
+
+    <input type="button" value="Ok" onclick="checkCode();">
+    <input type="reset">
+</form>
+
+</form>
+
+
+
+<h2>Click <a href="index.html">here</a> to see Cookie Clicker!<h2>
+
+
+
+<script>
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Correct!");
+    }
+    else {
+        alert("Incorrect!");
+    }
+
+}
+
+function checkCode() {
+
+    var car = document.getElementById("codeOption").value;
+    if (car == "img") {
+        alert("Correct!")
+    }
+
+     else {
+        alert("Incorrect!");
+    }
+
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<link rel="icon" type="image/x-icon" href="cookiefavicon.ico">
+
+</head>
+<body>
+<div>
+<h1>Cookie Clicker</h1>
+
+<img alt="cookie" onclick="updateCPS();" src="https://static.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png">
+<p id="cpsDisplay"></p>	<button onclick="reset();">Reset</button>
+<br>
+<p id="totalClicks"></p>
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+</div>
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date().getTime();
+//	function cookieClicked{
+//		updateCPS();
+//		nClicks += 1;
+//		document.getElementById('totalClicks').innerHTML = "Total Clicks: " + nClicks
+//	}
+
+function updateCPS() {
+		if (nClicks == 0) {
+
+			startTime = new Date().getTime();
+			nClicks += 1;
+			// first click
+			// 1. reset startTime
+			// 2. increase nClicks by 1
+			document.getElementById('cpsDisplay').innerHTML = "1 Clicks per second";
+		}
+		else {
+			// subsequent clicks:
+			// 1. create variable currentTime
+			var currentTime = new Date().getTime();
+			// 2. create variable timeElapsed and subtract start and currentTime
+			var timeElapsed = (currentTime - startTime) / 1000;
+			// 3. calculate CPS = nClicks ÷ timeElapsed 
+			var cps = nClicks / timeElapsed;
+			//    BUT timeElapsed be measured in seconds (not milliseconds)
+
+			// 4. display CPS using id
+			document.getElementById('cpsDisplay').innerHTML = cps.toFixed(2) + " Clicks per second";
+			// 5. increase nClicks by 1
+			nClicks += 1;
+		}
+}
+	if (nClicks % 25 == 0) {
+		nClicks = 0
+		startTime = new Date().getTime();
+		nClicks += 1;
+	}
+
+function reset() {
+	location.reload();
+}
+</script>
+</body>
+</html>
+
+

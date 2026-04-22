@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 3</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+		<link rel="stylesheet" href="./style.css">
+		<h1 style="text-align: center;">Common HTML tags inside the &lt;body&gt;</h1>
+		<table>
+			<tr>
+				<th style="width :28%;">Tag </th>
+				<th style="width :32%;">Definition</th>
+				<th style="width :40%;">Examples</th>
+			</tr>
+			<tr>
+				<td>&lt;p&gt;Write stuff here'&lt;/p&gt;</td>
+				<td>Use &lt;p&gt; to make a paragraph that shows up on your webpage.</td>
+				<td>
+					<p>This is an example paragraph.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;h1&gt;Write Stuff Here&lt;/h1&gt; <p>&lt;h2&gt;Or Here&lt;/h2&gt;</p>
+					<p>&lt;h3&gt;Or Here&lt;/h3&gt;</p>
+				</td>
+				<td>The h in the tags stand for headings. Headings are like paragraphs.</td>
+				<td>
+					<h1>Headings have various sizes that get smaller.</h1>
+					<h2>The heading above is a heading 1. This is heading 2.</h2>
+					<h3>This is heading 3. They go all the way to heading 6.</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;img alt="alternateText" src="writelink.here"&gt;</td>
+				<td>This tag allows you to show images on your webpage! The src attribute is required and stands for source. Write the image address there.</td>
+				<td>
+					<img alt="image" src="thisisanimage.jpg" style="border: 5px ridge lightcyan; width: 98%;">
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;a&gt; href="insert.link.here" &lt;a&gt;</td>
+				<td>The &lt;a&gt; tag is used to make hyperlinks. Just write the link you want to be directed to inside the quotation marks on the href attribute. You can make pictures work as links not just text!</td>
+				<td>
+					<p>Click <a href="./head/">here</a> to see Common HTML tags in the &lt;head&gt; or click the image to go to a wikipedia page about links. </p>
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Hyperlink">
+						<img alt="wikipedialinkpicture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Hyperlink-Wikipedia.svg/1920px-Hyperlink-Wikipedia.svg.png" width="300">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;br&gt;</td>
+				<td>Br is short for break. It makes a line break.</td>
+				<td>
+					<p>This text is seperated from the text below.</p>
+					<br>
+					<p>This is because I used &lt;br&gt; between these two paragraphs.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;!--WriteStuffHere--&gt;</td>
+				<td>&lt;!----&gt; allows you to write comments that wil not show up on the webpage. Write your comments in the middle of the four hyphens.</td>
+				<td>Try hit Crtl + U to see the comment I added here!
+					<!--Congrats You Found It!-->
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;ol&gt; <p>&lt;li&gt;write stuff here&lt;/li&gt;</p>
+					<p>&lt;li&gt;write stuff here&lt;/li&gt;</p>
+					<p>&lt;li&gt;write stuff here&lt;/li&gt;</p> /ol&gt;
+				</td>
+				<td>Lists. ol stands for ordered lists, ul stands for unordered lists, and li stands for list item.</td>
+				<td>
+					<ol>
+						<li>This is an ordered list. It had numbers on the side.</li>
+						<li>I made it using &lt;ol&gt; and &lt;/ol&gt; with &lt;li&gt; and &lt;li&gt; for each row.</li>
+						<li>I wrote the text in between the &lt;li&gt; and &lt;/li&gt; tags</li>
+						<li>You can also make unordered lists</li>
+						<li>These will have bullet points instead of numbers. </li>
+						<li>They use the &lt;ul&gt; and &lt;/ul&gt; tags instead of &lt;ol&gt; and &lt;/ol&gt;.</li>
+					</ol>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;div&gt;&lt;/div&gt;</td>
+				<td>Division</td>
+				<td>
+					<div style="color: yellow;">I made the text in this part of a table red by putting &lt;div&gt; and &lt;/div&gt; around it and using inline CSS to make the division's text yellow.</div> This text outside the division is not red though.
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;em&gt;TextHereWillBeItalicized&lt;/em&gt;</td>
+				<td>The &lt;em&gt;&lt;/em&gt; tag stands for emphasis and makes text italic when you put it in between the two tags. A similar tag is &lt;strong&gt;&lt;/strong&gt; which makes text bold. They both can also make text to voice programs say words differently.</td>
+				<td>
+					<em>I used &lt;em&gt; and &lt;/em&gt; and wrote text this in between them to make this italic.</em>
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;iframe src="https://linkofwebpage.webdomain"&gt; &lt;/iframe&gt;</td>
+				<td>The &lt;iframe&gt; and &lt;/iframe&gt; tags allow you to view a webpage inside your webpage. Use the src attribute to attach the link of the webpage you want to show inside.</td>
+				<td>
+					<iframe src="https://mrkam-student-websites.on.drv.tw/public/" width="600" height="250"></iframe>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<p style="text-align: left;">
+			<a class="btn" href="https://mrkam-student-websites.on.drv.tw/public/cameron/">Back: My other assignments</a>
+			<a style="float: right;" class="btn" href="./head/">Next: Common HTML tags in the &lt;head&gt;</a>
+		</p>
+		<br>
+		<br>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cookie Clicker A4</title>
+<link rel="icon" type="image/x-icon" href="cookie.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<div class="content">
+<h1>Cookie Clicker</h1>
+
+<button onclick="updateCPS();" type="submit" >      
+ <img src="cookie.png">
+</button>
+
+
+
+<p id="cpsDisplay"></p>
+
+<hr>
+<h2>HTML/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+</div>
+
+<script>
+var nClicks = 0;
+var startTime = new Date().getTime();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		startTime = new Date().getTime();
+		nClicks += 1
+	}
+	else {
+		
+		var currentTime = new Date().getTime();
+		var timeElapsed = (currentTime - startTime) / 1000
+		document.getElementById('cpsDisplay').innerHTML = "Clicks per second:" + " " + nClicks / timeElapsed
+	
+
+		nClicks += 1
+	}
+
+}
+</script>
+</body>
+</html>
+
+

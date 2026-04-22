@@ -1,0 +1,32 @@
+button{
+    border:none;}
+
+
+    img{
+    width:200px;
+    height:200px;
+}
+h1 {
+    padding-left: 10px;
+    color:#622B00;
+}
+
+a.link {
+     color: blue;
+}
+ 
+ a.link:visited {
+     color: darkblue;
+}
+
+ a.linkred {
+     color: red;
+}
+ 
+ a.linkred:visited {
+     color: darkred;
+}
+
+div{
+    font-weight: bold;
+}

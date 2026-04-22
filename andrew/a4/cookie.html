@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assigment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+	<div class="quiz">
+<h2>Cookie Clicker</h2>
+<p style="font-size: 20px;" id="cpsDisplay"></p>
+<button style="background-color: rgba(0, 0, 0, 0); border-radius: 100%; border: none;" onClick="updateCPS();" ><img style="width: 500px;" src="https://pngimg.com/d/cookie_PNG13656.png" alt="cookiebutton"></button>
+<p id="clicksDisplay"></p>
+<p id="timeDisplay"></p>
+
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+</div>
+
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date().getTime(); 
+var resets = 0;
+var startTime2 = new Date().getTime();
+
+function updateCPS() {
+	if (nClicks == 0) {
+		// first click
+		startTime = new Date().getTime();
+		nClicks = nClicks + 1
+	}
+	else {
+		// subsequent clicks:
+		var currentTime = new Date().getTime();
+		var timeElapsed = (currentTime - startTime) / 1000;
+		document.getElementById('cpsDisplay').innerHTML = "Clicks per second: " + (nClicks / timeElapsed).toFixed(2);
+		nClicks = nClicks + 1;
+		// total clicks calculation
+		var totalClicks = nClicks + (24*resets);
+		document.getElementById('clicksDisplay').innerHTML = "Total clicks: " + totalClicks;
+	}
+	if (nClicks %25 == 0) {
+		// reset game after 25 clicks 
+		nClicks = 0
+		startTime = new Date().getTime();
+		nClicks = nClicks + 1
+		resets = resets + 1
+	}
+}
+
+setInterval(updateTime, 10);
+
+function updateTime() {
+
+if (nClicks >= 1) {
+var currentTime = new Date();
+var timeElapsed = (currentTime - startTime2) / 1000;
+document.getElementById('timeDisplay').innerHTML = timeElapsed;
+document.getElementById('timeDisplay').innerHTML = "Time: " + timeElapsed.toFixed(1) + " Seconds";
+
+}
+
+}
+
+
+</script>
+</body>
+</html>

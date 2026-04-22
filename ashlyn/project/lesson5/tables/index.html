@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 5</title>
+<!-- External CSS:style.css-->
+<link rel="stylesheet" href="../style.css">
+
+
+<!-- Internal CSS: empty-->
+<style> </style>
+</head>
+<body>
+<div>
+  <!-- navbar -->
+  <div class="topnav">
+    <a href="../">Home</a>
+    <div id="moreLinks">
+      <a href="../../Lesson1/index.html">Lesson 1</a>
+      <a href="../../Lesson2/index.html">Lesson 2</a>
+      <a href="../../Lesson3/index.html">Lesson 3</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+  
+  <!--content-->
+  <div class="content">
+    <h1> Tables</h1>
+    <p>Click <a href="../">here</a> to return to home page</p>
+
+    <table style="width: 80%">
+      <tr> <!-- tr:Table Row  td:Table Data  th:Table Header-->
+        <th style="width:40%"> Student Name</th>
+        <th style="width:35%"> Student ID</th>
+        <th style="width:25%"> Score</th>
+      </tr>
+
+
+      <tr> 
+        <td> Alan Smith</td>
+        <td> 1234567 </td>
+        <td> 50% </td>
+      </tr>
+
+      <tr>
+        <td> Betty Grey</td>
+        <td> 2345671 </td>
+        <td> 95% </td>
+      </tr>
+
+        <tr>
+        <td> Cedric Feeder</td>
+        <td> 3456712 </td>
+        <td> 100% </td>
+      </tr>
+
+
+      
+
+
+
+    </table>
+  
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>

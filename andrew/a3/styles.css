@@ -1,0 +1,54 @@
+ body {
+     font-family: Arial, Helvetica;
+     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4LDJx?ver=41c2");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     margin: 0px 100px;
+}
+ table, td, th {
+     Border: 2px solid black;
+}
+ th, td {
+     padding: 10px;
+     text-align: left;
+}
+ table {
+     border-collapse: collapse;
+}
+ h1, p, li, td {
+     font-family: arial;
+}
+ div.topnav {
+     overflow: hidden;
+     background-color: lightblue;
+     position: relative;
+}
+ div.topnav #moreLinks {
+     display: none;
+    /* to hide by default */
+    /* display: block to show by default */
+}
+ div.topnav a {
+     color: white;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     display: block;
+     text-align: center;
+}
+ div.topnav a:hover {
+     color: white;
+     background-color: navy;
+}
+ div.topnav a.icon {
+     background: black;
+     display: block;
+     position: absolute;
+     right: 0;
+     top: 0;
+}
+ div.content {
+     padding: 25px;
+     background: rgba(255, 255, 255, 0.5);
+}

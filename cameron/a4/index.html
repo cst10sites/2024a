@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="quizfavicon.ico">
+</head>
+<body>
+	<div><h1>HTML/CSS/JS Quiz</h1></div>
+	<br>
+
+	<div class="label">
+	<h2>Which of these allow you to write a single line comment in HTML, CSS, and/or JS?</h2>
+	<form>
+		<input type="checkbox" name="question2" id="HTML"><label>&lt;--WriteCommentHere--&gt;</label><br>
+
+		<input type="checkbox" name="question2" id="JS"><label>// WriteCommentHere</label><br>
+		<input type="checkbox" name="question2" id="Python1"><label># WriteCommentHere</label><br>
+		<input type="checkbox" name="question2" id="CSS"><label>/* WriteCommentHere */</label><br>
+		<input type="checkbox" name="question2" id="Python2"><label>''' WriteCommentHere '''</label><br>
+		<input type="button" value="Submit" onclick="checkAnswer2()">
+  		<input type="reset"><br>
+  		<p id="display2"></p><br>
+	</form>
+	<h2>Which code makes a small blank button that runs the function checkAnswer()?</h2>
+	<form>
+		<input type="radio" name="question1" id="correctAnswer"><label>&lt;Button OnClick='checkAnswer(1)'&gt;&lt;/button&gt;</label><br>
+		<input type="radio" name="question1"><label>&lt;input&gt;type="onClick: checkAnswer();"&lt;/input&gt;</label><br>
+		<input type="radio" name="question1"><label>&lt;input value="button: blank;" onClick='checkAnswer()'&gt;</label><br>
+		<input type="radio" name="question1"><label>&lt;btn onclick="checkAnswer()"&gt;</label><br>
+		<input type="button" value="Submit" onclick="checkAnswer()">
+  		<input type="reset"><br>
+  		<label id="display"></label><br>
+  	</form>
+  	<form>
+  		<h2>What does CSS stand for?</h2>
+  		<select id="dropdown">
+  			<option>Computing Style Section</option>
+  			<option>Coding Styling Sector</option>
+  			<option>Cascading Style Sheets</option>
+  			<option>Colourful Styling Sheet</option>
+  		</select><br><br>
+		<input type="button" value="Submit" onclick="checkAnswer3()">
+  		<input type="reset"><br>
+  		<p id="display3"></p><br>
+  	</form>
+	</div>
+
+	<hr>
+	<div>	
+	<h2>Cookie Clicker</h2>
+	<p>Click <a href="cookie.html">here</a> to play cookie clicker.</p>
+	</div>
+</body>
+</html>
+<script>
+
+	function checkAnswer() {
+		var C = document.getElementById('correctAnswer').checked;
+		if (C == true) {
+			document.getElementById('display').innerHTML = "You are correct! This does work but it differs from most standard convention." + "<br>" + "Typically you would use &lt;button onclick='checkAnswer()'&gt;&lt;/button&gt; or &lt;input type='button' onclick='checkAnswer()'&gt;"
+		}
+		else {
+			document.getElementById('display').innerHTML = "You are wrong..."
+		}
+	}
+	function checkAnswer2() {
+		var A = document.getElementById('JS').checked;
+		var B = document.getElementById('HTML').checked;
+		var C = document.getElementById('CSS').checked;
+		var D = document.getElementById('Python1').checked;
+		var E = document.getElementById('Python2').checked;
+		if (A == true && B == true && C == true && D == false && E == false) {
+			document.getElementById('display2').innerHTML = "You are correct!"
+		}
+		else {
+			document.getElementById('display2').innerHTML = "You are wrong..."	
+		}
+	}
+	function checkAnswer3() {
+		var C = document.getElementById("dropdown").value;
+		if (C == "Cascading Style Sheets") {
+			document.getElementById('display3').innerHTML = "You are correct..."	
+		}
+		else {
+			document.getElementById('display3').innerHTML = "You are wrong..."	
+		}
+	}
+</script>

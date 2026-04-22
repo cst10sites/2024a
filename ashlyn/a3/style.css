@@ -1,0 +1,45 @@
+ .red {
+     color: red;
+}
+ .blue {
+     color: blue;
+}
+ body{
+     background-color: black;
+     color:white;
+}
+ table, th, td {
+     border: 3px solid grey;
+}
+ th, td {
+     padding: 5px;
+     text-align: left;
+    
+}
+ table {
+     border-collapse: collapse;
+     background-color:white;
+     color:black;
+}
+ a.btn{
+     color:white;
+     padding:10px 15px;
+     border-style:solid;
+     border-radius: 10px;
+     text-decoration: none;
+     font-size: 0.9em;
+     display:inline-block;
+}
+ a.link {
+     color: blue;
+}
+ a.link:visited {
+     color: darkblue;
+}
+ a.linkred {
+     color: red;
+}
+ a.linkred:visited {
+     color: darkred;
+}
+ 

@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Assignment 3 </title>
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+
+
+     
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <div id="moreLinks">
+       <a href="head.html"> Outside Tags!</a>
+    </div>
+    <a class="icon" onclick="showHideMenu()">...</a>
+  </div>
+
+
+
+<h1> HTML/CSS guide </h1>
+<h2> Common HTML tags inside &lt;body&gt; </h2>
+<table> 
+<tr>
+<th> Tag </th>
+<th> Definition </th>
+<th> Examples </th>
+</tr>
+
+<tr>
+<td> &lt;h1&gt; </td>
+<td> Largest heading </td>
+<td> <h1> Hello! </h1>
+
+<tr> 
+<td> &lt;p&gt; </td>
+<td> text used for long form writing</td>
+<td> <p> Mr. Kam's class is awesome!</p></td>
+
+<tr>
+<td> &lt;a&gt; </td>
+<td> Code used for hyperlinks</td>
+<td> <p>Click <a href="https://www.wikipedia.com">here</a> for more info
+
+<tr>
+<td> &lt;img &gt; </td>
+<td>Code needed to show images on HTML</td>
+<td> <img alt="McDonalds" src="https://pbs.twimg.com/media/FT4TKiVUUAIUh02?format=jpg&name=small">
+
+
+<tr>
+<td> &lt; div &gt; </td>
+<td>  The div tag is used in HTML to make divisions of content/code in the web page like text, images,navigation bar, etc.</td>
+<td> &lt; div &gt; </td>
+
+
+<tr>
+<td> &lt; h2 &gt; </td>
+<td> Second largerst heading </td>
+<td><h2> Hello! </h2></td>
+
+
+
+<tr>
+<td> src </td>
+<td> Gives the wanted source of the tag </td>
+<td> <P> src="https://pbs.twimg.com/media/FT4TKiVUUAIUh02?format=jpg&name=small" </P> </td>
+
+<tr> 
+<td> width </td>
+<td> sets the width for images in HTML </td>
+<td> <p>width="5px;"</p></td>
+
+
+<tr>
+<td> length </td>
+<td> sets length for images in HTML</td>
+<td> <p>length="10px;"
+
+
+<tr>
+<td> &lt;br&gt; </td>
+<td> Spaces out lines of code </td>
+<td> &lt;p&gt; Good Morning &lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt; How are you?&lt;/p&gt; </td>
+</table>
+
+
+
+
+
+<!--JavaScript will be explored later-->
+<script>
+function showHideMenu() {
+  var links = document.getElementById("moreLinks");
+  if (links.style.display == "block") {
+    links.style.display = "none"; // hide
+  } else {
+    links.style.display = "block"; // show
+  }
+}
+</script>
+</body>
+</html>
