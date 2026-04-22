@@ -1,0 +1,50 @@
+/* style.css */
+body {
+  font-family: Arial, Helvetica;
+  margin: 20px 100px;
+  background-image: url(https://loveincorporated.blob.core.windows.net/contentimages/gallery/507866bf-e96a-4773-b3db-bd605c199317-miles-canyon-yukon.jpg);
+  color: white;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+th {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+td {
+  font-size: 1.1em;
+}
+
+div {
+  background-color: gray;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 50px;
+}
+
+a {
+  color: yellow;
+}
+
+table,
+td,
+th {
+  border: 2px ghostwhite;
+  border-style: ridge;
+}
+
+td,
+th {
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assigment 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="head.html">Common used tags outside the body</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1>HTML/CSS Guide</h1>
+      <h2>Common HTML Tags inside &lt;body&gt;</h2>
+      <table>
+        <tr>
+          <th style="width: 25%">&lt;body&gt; Tags</th>
+          <th>Definition</th>
+          <th style="width: 50%">Examples</th>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;&lt;/p&gt;</td>
+          <td>This tag is used to make a paragraph</td>
+          <td>
+            <p>Hi this is a paragraph.</p>
+            <p>Hi this is another paragraph.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;img src="link" alt="pic"&gt;</td>
+          <td>This tag is for linking an image.</td>
+          <td>
+            <img style="width:46%" src="https://thumbs.dreamstime.com/b/white-desk-oscillating-fan-toned-copy-space-white-desk-oscillating-fan-toned-copy-space-190797747.jpg" alt="Fan">
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;&lt;/h1&gt;... &lt;h6&gt;&lt;/h6&gt;</td>
+          <td>A header.</td>
+          <td>
+            <h1>Header</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;ol&gt; <br>&lt;li&gt;... &lt;/li&gt; <br>... <br>&lt;/ol&gt; </td>
+          <td>Makes an ordered list.</td>
+          <td>
+            <ol>
+              <li> one </li>
+              <li> two </li>
+              <li> three </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;table&gt; <br>&lt;tr&gt; <br> &lt;th&gt;... &lt;/th&gt; <br> ... <br> &lt;/tr&gt; <br>&lt;tr&gt; <br> &lt;td&gt;... &lt;/td&gt; <br> ... <br> &lt;/tr&gt; <br> ... <br> &lt;/table&gt; </td>
+          <td>This tag is used to create a table</td>
+          <td>
+            <table>
+              <tr>
+                <th>Tags</th>
+                <th>Definition</th>
+                <th>Example</th>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;iframe&gt;&lt;/iframe&gt;</td>
+          <td>The iframe tag is used to display something in your own webpage.</td>
+          <td>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/cA0Mad-fTuo?si=l49DqwIXeCGj1loY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;div&gt;&lt;/div&gt;</td>
+          <td>The div tag will create sections within your webpage.</td>
+          <td>The navigation bar at the top of the screen.</td>
+        </tr>
+        <tr>
+          <td>&lt;a href="link"&gt;&lt;/a&gt;</td>
+          <td>This tag will create a hyperlink on the users end.</td>
+          <td><a href="https://earth.google.com/web/@0,-1.9007002,0a,22251752.77375655d,35y,0h,0t,0r/data=OgMKATA/">Click Me</a></td>
+        </tr>
+        <tr>
+          <td>&lt;strong&gt;&lt;/strong&gt;</td>
+          <td>This tag will make it bold.</td>
+          <td>
+            <strong>This is bold text.</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;em&gt;&lt;/em&gt;</td>
+          <td>This tag will add emphasis to whatever you apply it to.</td>
+          <td>
+            <em>Here is an example of it.</em>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;br&gt;</td>
+          <td>This tag will create a line break.</td>
+          <td>Hi<br><br><br><br><br><br><br>Bye </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

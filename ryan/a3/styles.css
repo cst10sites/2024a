@@ -1,0 +1,101 @@
+body { 
+ 
+     font-family: Arial, Helvetica; 
+ 
+     background-image: url("https://i.pinimg.com/originals/39/2d/67/392d675638b96f888aebf283910b3b50.jpg"); 
+ 
+    background-size: cover;
+ 
+     margin: 0px 100px; 
+ 
+} 
+ 
+table, td, th { 
+ 
+     Border: 2px solid black; 
+ 
+} 
+ 
+th, td { 
+ 
+     padding: 20px; 
+ 
+     text-align: left; 
+ 
+} 
+ 
+table { 
+ 
+     border-collapse: collapse; 
+ 
+} 
+ 
+h1, p, li, td { 
+ 
+     font-family: ; 
+ 
+} 
+ 
+div.topnav { 
+ 
+     overflow: hidden; 
+ 
+     background-color: black; 
+ 
+     position: relative; 
+ 
+} 
+ 
+div.topnav #moreLinks { 
+ 
+     display: none; 
+ 
+    /* to hide by default */ 
+ 
+    /* display: block to show by default */ 
+ 
+} 
+ 
+div.topnav a { 
+ 
+     color: white; 
+ 
+     padding: 14px 16px; 
+ 
+     text-decoration: none; 
+ 
+     font-size: 17px; 
+ 
+     display: block; 
+ 
+     text-align: center; 
+ 
+} 
+ 
+div.topnav a:hover { 
+ 
+     color: white; 
+ 
+     background-color: navy; 
+ 
+} 
+ 
+div.topnav a.icon { 
+ 
+     background: black; 
+ 
+     display: block; 
+ 
+     position: absolute; 
+ 
+     right: 0; 
+ 
+     top: 0; 
+ 
+} 
+ 
+div.content { 
+ 
+     padding: 25px; 
+ 
+}

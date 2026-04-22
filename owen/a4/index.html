@@ -1,0 +1,61 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<br><br><br>
+<div>
+<h1>    Cookie Clicker</h1>
+
+<button onclick="updateCPS(); showNumberOfClicks();"id="close" class="closing"><img src="https://th.bing.com/th?id=OIP.a464zasY6dqwNrOSGH4d8AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" /></button>
+
+    <!--<button onclick="updateCPS();">Button</button>-->
+<p id="cpsDisplay"></p>
+<h4>Total Clicks</h4>
+<p id="showNumberOfClicks"></p>
+<br><br><br>
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="quiz.html">here</a> to play the quiz.</p>
+</div>
+<!--<img src="https://th.bing.com/th?id=OIP.GGNcVrKAmZeAklEokrITrQHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" />-->
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date().getTime();
+var tClicks = 0;
+
+function updateCPS() {
+	if (nClicks == 0){
+		startTime = new Date().getTime();
+		nClicks = 1;
+
+
+															
+	}
+	else {
+		// subsequent clicks:
+		currentTime = new Date().getTime();												
+		var timeElapsed = (currentTime - startTime) / 1000					
+		document.getElementById('cpsDisplay').innerHTML = nClicks / timeElapsed + " clicks per second"  			
+		nClicks = nClicks + 1;													 
+	}
+}
+function showNumberOfClicks() {
+				tClicks = tClicks + 1;
+				document.getElementById('showNumberOfClicks').innerHTML = tClicks;
+			}
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="alienmonster.png">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<h2>HTML/CSS Quiz</h2>
+<!--1/radio 1-->
+<form>
+<!--ask at least one question related to HTML/CSS/JS-->
+    <label>Which language is used to structure a web page and its content?</label>
+    <br>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <label>HTML</label>
+    <br>
+    <input type="radio" name="group">
+    <label>CSS</label>
+    <br>
+    <input type="radio" name="group">
+    <label>JavaScript</label>
+    <br>
+    <br>
+    <input type="button" value="submit" onclick="checkRadio()">
+    <input type="reset">
+<br>
+<br>
+
+<form>
+    <label>What are the 2 HTML elements for the 2 largest headings?</label>
+    <br>
+    <input type="checkbox" id="h2">
+    <label>&lt;h2&gt;</label>
+    <br>
+       <input type="checkbox" id="h1">
+    <label>&lt;h1&gt;</label>
+    <br>
+       <input type="checkbox" id="head">
+    <label>&lt;head&gt;</label>
+    <br>
+       <input type="checkbox" id="heading">
+    <label>&lt;heading&gt;</label>
+    <br>
+    <button onclick="checkHead();">Answer</button>
+    <input type ="reset">
+
+</form>
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+
+<script>
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    if (correctAnswerSelected == true) {
+        alert("Correct!");
+    }
+    else{
+        alert("Incorrect!");
+    }
+    
+}
+
+function checkHead() {
+    var h2 = document.getElementById("h2").checked; 
+    var h1 = document.getElementById("h1").checked; //correct
+    var head = document.getElementById("head").checked;
+    var heading = document.getElementById("heading").checked; 
+
+    if (h2 == true && h1 == true && head == false && heading == false) {
+        alert("Correct!");
+    }
+    else {
+        alert("Try again!");
+    }
+
+
+}
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+table, th, td{
+  border: 2px solid white;
+
+}th, td{
+  padding: 5px;
+}table{
+  border-collapse: collapse;
+}
+body{
+  background-size: 100%;
+    background-image: url("https://th.bing.com/th?id=OIP.m4FmOjk0Bx-N4JaBzsBoTgHaEP&w=330&h=189&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+margin: 0px 100px;
+color: white;
+  
+}.content {
+    padding: 25px;
+    color: white;
+    background: rgba(0, 0, 20, 0.7);}
+    a{
+      color: cyan;
+    }div.topnav {
+  overflow: hidden;
+  background-color: darkgrey;
+  position: relative;
+}
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+}
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+div.topnav a:hover {
+  color: black;
+  background-color: lightgrey;
+}
+div.topnav .icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

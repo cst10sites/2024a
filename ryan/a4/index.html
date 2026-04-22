@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5dc;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #333;
+      }
+
+      .question-container {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 80%;
+      }
+
+      p {
+        color: #555;
+      }
+
+      select {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+        color: green;
+      }
+    </style>
+    <title>HTML Questions</title>
+  </head>
+  <body>
+    <h1>HTML Questions</h1>
+    <div class="question-container">
+      <p>1. What does HTML stand for?</p>
+      <input type="radio" name="htmlQuestion" value="a"> a) Hyper Text Markup Language <br>
+      <input type="radio" name="htmlQuestion" value="b"> b) Hello Taco Meat Linguist <br>
+      <input type="radio" name="htmlQuestion" value="c"> c) Hyperlink and To The Moon <br>
+      <input type="radio" name="htmlQuestion" value="d"> d) Highspeed Markup Language <br>
+    </div>
+    <div class="question-container">
+      <p>2. Which tag is used to define an unordered list in HTML?</p>
+      <select id="dropdownAnswer">
+        <option value="a">a) &lt;ul&gt;</option>
+        <option value="b">b) &lt;ol&gt;</option>
+        <option value="c">c) &lt;li&gt;</option>
+        <option value="d">d) &lt;ul&gt; and &lt;li&gt;</option>
+      </select>
+    </div>
+    <button onclick="checkAnswers()">Check Answers</button>
+    <button onclick="resetAnswers()">Reset</button>
+    <div id="result"></div>
+    <script>
+      function checkAnswers() {
+        var question1 = document.querySelector('input[name="htmlQuestion"]:checked');
+        var question2 = document.getElementById('dropdownAnswer').value;
+        var resultDiv = document.getElementById('result');
+        if (question1 && question1.value === 'a' && question2 === 'a') {
+          resultDiv.style.color = 'green';
+          resultDiv.textContent = 'You got both answers!';
+        } else {
+          resultDiv.style.color = 'red';
+          resultDiv.textContent = '1 or more is incorrect!';
+        }
+      }
+
+      function resetAnswers() {
+        // Reset radio buttons
+        var radioButtons = document.querySelectorAll('input[name="htmlQuestion"]');
+        radioButtons.forEach(function(button) {
+          button.checked = false;
+        });
+        // Reset dropdown
+        document.getElementById('dropdownAnswer').selectedIndex = 0;
+        // Clear result
+        document.getElementById('result').textContent = '';
+      }
+    </script>
+  </body>
+</html>

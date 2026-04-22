@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: whitesmoke;">
+<div style="font-size: 1.3em;">
+<h1>HTML/CSS Quiz</h1>
+<form>
+<label>Which HTML tag is used to make headers?</label>
+<br>
+<input type="checkbox" id="h7">
+<label>&lt;h7&gt; </label>
+<br>
+<input type="checkbox" id="big">
+<label>&lt;big&gt;</label>
+<br>
+<input type="checkbox" id="h1">
+<label>&lt;h1&gt; </label>
+<br>
+<input type="checkbox" id="h6">
+<label>&lt;h6&gt; </label>
+<br>
+<input type="button" value="OK" onclick="htmlHeader();">
+<input type="reset">
+</form>
+
+
+<form>
+	<label>What is the coding language that controls the visual effects of a webpage?</label>
+	<select id="codingLanguage">
+		<option value="HTML">HTML</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="CSS">CSS</option>
+	</select>
+	<br>
+	<input type="button" value="OK" onclick="checkLanguage();">
+	<input type="reset">
+</form>
+<p id="languageDisplay"></p>
+
+
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+</div>
+<script>
+
+function htmlHeader () {
+
+	var h7 = document.getElementById('h7').checked;
+    var big = document.getElementById('big').checked;
+    var h1 = document.getElementById('h1').checked; // correct
+    var h6 = document.getElementById('h6').checked; // correct
+
+    
+
+    if ( h1 == true && h6 == true && h7 == false && big == false) {
+    	alert('Correct!');
+    }
+   
+    else {
+    	alert('Try again!');
+    }
+}
+
+
+
+function checkLanguage () {
+
+
+var codingLanguage = document.getElementById("codingLanguage").value;
+
+
+document.getElementById('languageDisplay').innerHTML = "We do not use " + codingLanguage + " for visual effects on websites.";
+
+	if (codingLanguage == "CSS") {
+
+		document.getElementById('languageDisplay').innerHTML = 'We do use ' + codingLanguage + ' for visual effects on websites!';
+
+			}
+	
+}
+
+
+
+</script>
+</body>
+</html>

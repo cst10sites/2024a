@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lesson 8</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<h1>HTML Quiz</h1>
+
+
+	<form>
+    <label>What Tag Displays the Biggest Heading</label><br>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;h6></label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <label>&lt;h1></label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;p></label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;Heading"large"></label>
+    <br>
+    <input type="button" value="submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+
+
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+
+
+	<script>
+		function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    //alert(correctAnswerSelected); //true or false
+    if (correctAnswerSelected == true) {
+        alert('Correct!')
+    }else{
+        alert("Close!")
+    }
+}
+	</script>
+</body>
+</html>

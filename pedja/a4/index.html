@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--create style.css and change to href="style.css"-->
+     <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1>Cookie Clicker Game</h1>
+    <div>
+      <p>Click the cookie to acheive a high cps!</p>
+      <button style="background-color: rgba(0, 0, 0, 0); border: none;" onclick="updateCPS();">
+        <img src="Cookie.png" alt="Cookie" width="400" height="400">
+      </button>
+      <p id="cpsDisplay">Clicks Per Second: 0</p>
+      <p id="clickCount">Total clicks: 0</p>
+      <p id="timeDisplay">Time: 0 Seconds</p>
+      <button onclick="reset();">Reset</button>
+    </div>
+    <br>
+    <hr>
+    <div>
+    <h1>HTML/CSS/JavaScript Quiz</h1>
+    <p>Click <a href="quiz.html">here</a> to play the quiz. </p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      // global variables
+      var nClicks = 0;
+      var startTime = new Date().getTime();
+
+      function updateCPS() {
+        nClicks == 1;
+        document.getElementById('clickCount').innerHTML = "Total Clicks: " + nClicks
+        if (nClicks == 0) {
+          startTime = new Date().getTime();
+          nClicks = nClicks + 1;
+        } else {
+          // subsequent clicks:
+          var currentTime = new Date().getTime();
+          var timeElapsed = (currentTime - startTime) / 1000
+          document.getElementById('cpsDisplay').innerHTML = "Clicks Per Second: " + (nClicks / timeElapsed).toFixed(2);
+          nClicks = nClicks + 1
+          if (nClicks % 25 == 0){
+            nClicks = 0
+            startTime = new Date().getTime();
+            nCLicks = nClicks + 1
+          }
+          if (nClicks % 26 == 0) {
+             document.getElementById('cpsDisplay').innerHTML = "Clicks Per Second: " + (nClicks / timeElapsed).toFixed(2);
+          }
+        }
+        console.log(timeElapsed);
+      }
+
+      function reset() {
+        location.reload();
+      }
+
+setInterval(updateTime, 10);
+
+function updateTime() {
+
+  if (nClicks >= 1) {
+
+
+    var currentTime = new Date();
+    var timeElapsed = (currentTime - startTime) / 1000;
+    document.getElementById('timeDisplay').innerHTML = timeElapsed;
+    document.getElementById('timeDisplay').innerHTML = "Time: " + timeElapsed.toFixed(1) + " Seconds";
+  }
+}
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cookie Clicker</title>
+<style>
+  body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+  }
+ 
+  h2 {
+    color: velvet;
+  }
+ 
+  button {
+    background: url('cookie.png') no-repeat center center;
+    background-size: cover;
+    width: 230px; 
+    height: 230px;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  p {
+    color: velvet;
+  }
+</style>
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<button onclick="updateCPS();"></button>
+<p>Total Clicks: <span id="totalClicks">0</span></p>
+<p>Clicks Per Second: <span id="cpsDisplay">0</span></p>
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+<script>
+  // global variables
+  var nClicks = 0;
+  var startTime = new Date().getTime();
+ 
+  function updateCPS() {
+    var currentTime = new Date().getTime();
+    var timeElapsed = (currentTime - startTime) / 1000; // convert milliseconds to seconds
+ 
+    if (nClicks === 0) {
+      // first click
+      startTime = currentTime;
+    } else {
+      // subsequent clicks
+      var cps = nClicks / timeElapsed;
+      document.getElementById('cpsDisplay').textContent = cps.toFixed(2);
+    }
+ 
+    // update total clicks and increase nClicks
+    nClicks++;
+    document.getElementById('totalClicks').textContent = nClicks;
+  }
+</script>
+</body>
+</html>
+

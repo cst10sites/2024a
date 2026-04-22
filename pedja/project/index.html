@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 5</title>
+    <!--External CSS: style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Internal CSS: empty-->
+      </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="../Lesson1/index.html">Lesson 1</a>
+          <a href="../Lesson2/index.html">Lesson 2</a>
+          <a href="../Lesson3/index.html">Lesson 3</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <!--content-->
+      <div class="content">
+        <h1>Dropdown Navigation Bar</h1>
+        <p>This example demonstrates a navigation menu on many modern and mobile websites.</p>
+        <p>Click on the ellipsis (three dots) in the top right corner to toggle the <a href="index.html">menu</a>. </p>
+     
+
+
+
+        <h1>External CSS</h1>
+        <p>Internal and inline CSS codes go inside the html file but external CSS is inside a seperate file referenced by the link tag within head. One benifit for using external CSS is allowing multiple webpages to share the same CSS theme by referencing to the same CSS file. Making changes to this CSS file makes changes to all the webpage's theme.</p>
+      
+        <h1>Tables</h1>
+        <p>Click <a href="./tables/">here</a> for the lesson on tables</p>
+
+
+
+        <h1>Embedded Objects Using iframe</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9YffrCViTVk?si=LWanjudl2A93fEkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--google maps-->
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4378.942510629148!2d-123.1682911654303!3d49.262472421802784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673aef44b8213%3A0xfed77b389f0f9a70!2sKitsilano%20Secondary%20School!5e0!3m2!1sen!2sca!4v1696434955546!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--costum website-->
+
+        <iframe width="600" height="480" src="https://blogs.vsb.bc.ca/ckam/cst.10"></iframe>
+
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>
