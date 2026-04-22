@@ -1,0 +1,42 @@
+a{
+	color: yellow;
+}
+
+div.content{
+	padding: 25px;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+body{
+	font-family: Arial;
+	margin: 0px 100px;
+	background-image: url(https://motionarray.imgix.net/preview-1233971-auLgSL1NAM-high_0000.jpg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	color: white;
+	}
+
+table, th, td{
+ border: 2px solid lightcyan;
+}
+
+th, td{
+	padding: 5px;
+	text-align: center;
+}
+table{
+	border-collapse: collapse;
+	color: lightcyan;
+  width: 60%;
+  height: 80px;
+}
+
+div.table{
+	padding: 25px;
+	background: rgba(50, 50, 50, 0.9);
+}
+
+div.topnav{
+	padding: 25px;
+	background: rgba(50, 57, 128, 1.0);

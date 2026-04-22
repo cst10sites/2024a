@@ -1,0 +1,33 @@
+         body {
+        font-family: Trebuchet MS;
+        color: white;
+        margin: 0px 100px;
+        background-image: url("https://vip-go.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_407554567.jpg?w=750");
+          background-repeat: no-repeat;
+          background-size: 100%;
+            background-attachment: fixed;
+  background-position: center;
+        }
+
+
+
+
+
+    a {color: red;}
+
+      table, th, td {
+        border: 2px solid red;
+
+      }
+
+      th, td {
+        padding: 5px;
+        text-align: Left; /* center */
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+
+

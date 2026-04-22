@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="quiz.css" >
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<h2>HTML/CSS Quiz</h2>
+<form>
+	<label>What does HTML stand for</label>
+	<br>
+
+	<input type="Checkbox" id="Hypertext">
+	<label>Hypertext Markup Language</label>
+	<br>
+
+	<input type="Checkbox" id="Home">
+	<label>Home Tool Markup Language</label>
+	<br>
+
+	<input type="Checkbox" id="Hyperlinks">
+	<label>Hyperlinks and Text Markup Language</label>
+	<br>
+
+<input type="reset">
+<input type="button" value="Answer" onclick="HTML();">
+<!--ask at least one question related to HTML/CSS/JS-->
+</form>
+<br><br>
+
+
+<form>
+	<Label>What's the correct HTML for the smallest heading?</Label>
+	<br>
+
+	<input type="Checkbox" id="h1">
+	<label>H1</label>
+	<br>
+
+	<input type="Checkbox" id="h4">
+	<label>H4</label>
+	<br>
+
+	<input type="Checkbox" id="h6">
+	<label>H6</label>
+	<br>
+   
+	<input type="Checkbox" id="h7">
+	<label>H7</label>
+	<br>
+ 
+ 
+ 	
+<input type="reset">
+<input type="button" value="Answer" onclick="Heading()" >
+
+</form>
+<br>
+
+
+
+
+<h3>Cookie Clicker</h3>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+
+
+
+
+
+
+
+
+<script>
+
+	function HTML() {
+		var Hypertext = document.getElementById('Hypertext').checked // correct
+		var Home = document.getElementById('Home').checked // incorrect
+		var Hyperlinks = document.getElementById('Hyperlinks').checked // incorrect
+
+		if (Hypertext == true && Home == false && Hyperlinks == false){
+
+			alert("Correct")
+		}
+		else {
+			alert("Try Again")
+		}
+	}
+
+
+	function Heading() {
+		var h1 = document.getElementById('h1').checked
+		var h4 = document.getElementById('h4').checked
+		var h6 = document.getElementById('h6').checked
+		var h7 = document.getElementById('h7').checked
+
+		if (h6 == true && h1 == false && h4 == false && h7 == false ){
+
+			alert("Correct!!")
+		}
+
+		else {
+			alert("Try Again!!")
+		}
+
+	}
+
+
+
+
+
+	
+
+
+</script>
+</body>
+</html>

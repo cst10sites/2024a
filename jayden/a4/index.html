@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="cookie.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+
+<div class="content">
+<h1>HTML/CSS Quiz</h1>
+<form>
+   <label>What is the correct order you put the title, body, &lt;!DOCTYPE html&gt;, and head tags in:</label>
+    <br>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <label>&lt;!DOCTYPE html&gt;, head, title, body</label>
+    <br>
+    <input type="radio" name="group">
+    <label>head, body, title, &lt;!DOCTYPE html&gt;</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;!DOCTYPE html&gt;, body, head, title</label>
+    <br>
+    <input type="radio" name="group">
+    <label>title, head, body, &lt;!DOCTYPE html&gt;</label>
+    <br>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+<br>
+<br>
+<br>
+<form>
+    <label>You put the &lt;!DOCTYPE html&gt; tag in:</label>
+    <select id="carOption">
+        <option value=" do not put the <DOCTYPE html> tag in the body">The body</option>
+        <br>
+        <option value=" are correct">The beginning</option>
+        <br>
+        <option value=" do not put the <DOCTYPE html> tag in the head">The head</option>
+        <br>
+        <option value=" do not put the <DOCTYPE html> tag anywhere you want">Anywhere you want</option>
+        <br>
+    </select>
+    <br>
+    <br>
+    <input type="button" value="Submit" onclick="checkCar();">
+    <input type="reset">
+</form>
+<p id="carDisplay"></p>
+<br>
+<br>
+<br>
+<form>
+    <label>What are ways to make text into headings?</label>
+    <br>
+    <!--Need to add multiple id for JavaScript to work-->
+    <!--choice 1-->
+    <input type="checkbox" id="one">
+    <label>&lt;h1&gt;text&lt;h1&gt;</label>
+    <br>
+    <!--choice 2-->
+    <input type="checkbox" id="two">
+    <label>&lt;heading&gt;text&lt;heading&gt;</label>
+    <br>
+    <!--choice 3-->
+    <input type="checkbox" id="three">
+    <label>You can not make headings.</label>
+    <br>
+    <!--choice 4-->
+    <input type="checkbox" id="four">
+    <label>&lt;h3&gt;text&lt;h3&gt;</label>
+    <br>
+    <br>
+    <input type="button" value="Submit" onclick="checkNumber();">
+    <input type="reset">
+</form>
+<br>
+<br>
+<br>
+<hr>
+<h1>Cookie Clicker</h1>
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+<br>
+<br>
+<br>
+</div>
+
+<script>
+	function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    if (correctAnswerSelected == true) {
+        alert("That is the correct answer");
+    }
+    else {
+        alert("That is not the correct order to put them");
+    }
+}
+
+function checkCar() {
+    var car = document.getElementById("carOption").value;
+    // alert(car);
+    document.getElementById('carDisplay').innerHTML = "You" + car + "!";
+    if (car == " are correct!") { 
+        alert("Correct! you put the <!DOCTYPE html> tag in the  " + car + ".");
+    }
+
+}
+
+function checkNumber() {
+    var one = document.getElementById("one").checked; // correct
+    var two = document.getElementById("two").checked;
+    var three = document.getElementById("three").checked;
+    var four = document.getElementById("four").checked; // correct
+
+    if (one == true && four == true && three == false && two == false) {
+        alert("Correct");
+    }
+    else {
+        alert("Try again!");
+    }
+}
+
+</script>
+</body>
+</html>

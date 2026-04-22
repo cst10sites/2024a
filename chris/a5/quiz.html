@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<meta charset="UTF-8">
+<title>Assignment 5</title>
+ <link rel="icon" type="favicon2.png" href="favicon2.png">
+<link rel="stylesheet" href="style.css">
+<body>
+    <div>
+
+	<h1>Radio Buttons</h1>
+    <br>
+<form>
+    <label><h2>Which Tag Defines a Hyperlink</h2></label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;p></label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <label>&lt;a></label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;h1></label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;link></label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+
+    <script>
+        
+
+     function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Correct!");
+    }
+    else {
+        alert("Incorrect, Try Again");
+    }
+}
+
+
+
+
+
+
+
+</script>
+
+<h3>Click <a href="cookie.html">here</a> to play the cookie clicker.</h3>
+
+</div>
+
+	</body>
+    </html>
