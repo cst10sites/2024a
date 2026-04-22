@@ -1,0 +1,16 @@
+body {
+        background-color: #F1DABF;
+        color: black;
+        font-family: 'Ariel', sans-serif;
+        margin: 200px 500px;
+      }
+
+      h1 {
+        text-decoration: underline;
+      }
+
+      h1 {
+        text-shadow: 2px 2px 5px brown;
+      }
+
+

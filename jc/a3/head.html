@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 3 (head)</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+		<div>
+      <div class="topnav">
+       <a href="index.html">Home</a>
+        <div id="moreLinks">
+         <a href="../a3/head.html">Head tags</a>
+         <a href="../a3/index.html">HTML/CSS Guide</a>
+ 
+            </div>
+             <a class="icon" onclick="showHideMenu()">...</a>
+              </div>
+
+
+ <div class="content">
+		<h1>Head HTML guide</h1>	
+
+<table style="width: 80%">
+<tr>
+<th style="width: 30%">Tags</th>
+<th style="width: 60%">Definition</th>
+<th style="width: 70%">Examples</th>
+</tr>
+<tr>
+	<td>&lt;!DOCTYPE html</td>
+	<td></td>
+	<td>No example</td>
+</tr>
+<tr>
+	<td>&lt;html lang="en"&gt;</td>
+	<td>sets this page to "en" which means english. Helps websites like google know what default language the website is</td>
+	<td>No example</td>
+</tr>
+<tr>
+	<td>&lt;Title&gt;</td>
+	<td>The title of the webpage shown on the tab</td>
+	<td>At the top of the screen at the tab where it says Assignment 3 (head)</td>
+</tr>
+<tr>
+	<td>&lt;meta charset="UTF-8"&gt;</td>
+	<td>The charset specifies the character encoding for the html website</td>
+	<td>No example</td>
+</tr>
+<tr>
+	<td>Internal CSS</td>
+	<td>Internal CSS is used to design the layout of the content within the html file. Internal CSS is used inside the head tag of the html file.</td>
+	<td>None</td>
+</tr>
+<tr>
+	<td>External CSS</td>
+	<td>External CSS is also used to design the layout of the content within the html file although it is in a seperate file.</td>
+	<td>None</td>
+</tr>
+<tr>
+	<td>Favicon</td>
+	<td>The image used on the left side of the tab on the web browser</td>
+	<td></td>
+</tr>
+
+
+
+
+
+
+	</table>
+	<script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+</body>
+</html>

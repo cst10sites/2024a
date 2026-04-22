@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="icon" type="image/x-icon" href="alien.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+<style>
+    body {
+      background-color:black;
+      color: white;
+
+      font-family: "Trebuchet MS";
+
+    }
+        div {
+      background-color: grey;
+      padding: 20px;
+      border-style: outset;
+      border-width: thick;
+      border-color: white;
+      border-radius: 25px;
+
+    }
+  h1, h2 {
+      color: yellow;
+    }
+
+
+    /* hyperlinks */
+    a {
+      color:yellow;
+    }
+
+    a:visited {
+      color:red;
+    }
+
+
+    a:hover {
+      color:green;
+    }
+
+    /* a:link (unvisited), a:active (click and hold) */
+
+    h1:hover {
+      color:white;
+    }
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<h2>HTML/CSS Quiz</h2>
+
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+
+<form>
+
+
+    <h3>1. What creates a line break:</h3>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>&ltbr&gt</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&ltib&gt</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&ltbreak&gt</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&ltbl&gt</label>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+<!--ask at least one question related to HTML/CSS/JS-->
+</form>
+<form>
+<h3>2. Where inside HTMl do you put JavaScript?<h3>
+    
+    <input type="text" id="script">
+    <input type="button" value="Submit" onclick="checkWritten();">
+    <input type="reset">
+
+
+
+
+</form>
+
+
+
+
+
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+
+<script>
+
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Correct!");
+    }
+    else {
+        alert("Incorrect! Try again");
+    }
+}
+
+
+function checkWritten() {
+    var answer = document.getElementById("script").value;
+    answer = answer.toLowerCase();
+    document.getElementById("script").value = answer;
+    // alert(correctAnswerSelected); // true or false
+    if (answer == "script") {
+        alert("Correct!");
+    }
+    else {
+        alert("Incorrect! Try again");
+    }
+}
+
+
+</script>
+
+<h1><span style="color: red; text-shadow: black 1px 2px ">G</span><span style="color: orange; text-shadow: black 1px 2px ">o</span><span style="color: yellow; text-shadow: black 1px 2px ">o</span><span style="color: green; text-shadow: black 1px 2px ">d</span><span style="color: #05aef7; text-shadow: black 1px 2px ">L</span><span style="color: blue; text-shadow: black 1px 2px ">u</span><span style="color: purple; text-shadow: black 1px 2px ">c</span><span style="color: brown; text-shadow: black 1px 2px ">k</span>!!!</h1>
+
+</body>
+</html>

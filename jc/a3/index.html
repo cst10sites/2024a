@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Assignment 3</title>
+		    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="../a3/head.html">Head tags</a>
+           <a href="../a3/index.html">HTML/CSS Guide</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+
+
+ <div class="content">
+		<h1>HTML/CSS Guide</h1>	
+	<h2>Common Html tags</h2>
+	
+	<table style="width: 50%;">
+		<tr>
+			<th style="width: 30%;">Tags</th>
+			<th style="width: 60%;">Definition</th>
+			<th style="width: 70%;">Examples</th>
+		</tr>
+		<tr>
+			<td>&lt;div&gt;</td>
+			<td> A box for text or images</td>
+			<td><div>Hello</div></td>
+		</tr>
+		<tr>
+			<td>&lt;a href="link"&gt;</td>
+			<td>hyperlink to a new page</td>
+			<td>click<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> here</a></td>
+				
+			
+		</tr>
+		<tr> 
+			<td>&lt;Li&gt;</td>
+			<td>Makes the text in point/bullet form</td>
+			<td><li>Hello</li></td>
+		</tr>
+		<tr>
+			<td>&lt;p&gt;</td>
+			<td>Used for writing text on html</td>
+			<td><p>Hello</p></td>
+		</tr>
+		<tr>
+			<td>&lt;h1&gt;</td>
+			<td>Used for titles/headers</td>
+			<td><h1>Hello</h1></td>
+		</tr>
+		<tr>
+			<td>&lt;img&gt;</td>
+			<td>an image</td>
+			<td><img alt="volleyball" style="width: 15%;" src="https://img.freepik.com/premium-vector/abstract-silhouette-male-volleyball-player-jumping-hitting-ball_9955-1137.jpg?w=2000"></td>
+		</tr>
+		<tr>
+			<td>&lt;center&gt;</td>
+			<td>Centers text in paragraph</td>
+			<td><p><center>Hey</center></p></td>
+
+		</tr>
+		<tr>
+			<td>&lt;br&gt;</td>
+			<td>The tag indicates a line break</td>
+			<td><p>Test<br>Test</p></td>
+
+		</tr>
+		<tr>
+			<td>&lt;font&gt;</td>
+			<td>A different style/design for letters</td>
+			<td><font size="5" >Hello</font> </td>
+
+		</tr>
+		<tr>
+			<td>&lt;btn&gt;</td>
+			<td>Link to a folder</td>
+			<td><a class ="btn"href="../lesson1/index.html">Lesson 1</a></td>
+		</tr>
+
+
+
+
+
+
+
+
+	</table>
+	    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+	
+	</body>
+	</html>
+
+
+	

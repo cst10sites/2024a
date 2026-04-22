@@ -1,0 +1,258 @@
+button{
+	size: 100%%;
+	border: none;
+}
+h2{
+	font-size: 50%;
+}
+
+#cpsDisplay{
+	font-family: arial;
+	font-size: 120%;
+	text-align: center;
+}
+
+#nClicks{
+	text-align: center;
+}
+
+
+#intro{
+	place-content: center;
+	font: sans-serif;
+}
+
+#cookie{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+/*.anim {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: pulse;
+  animation-duration: 4s;
+}*/
+
+@keyframes example {
+  from {width: 100%}
+  to {width: 50%}
+}
+.centerText{
+    text-align:center;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+ .zoom:hover {
+     transform: scale(1.25);
+ }
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #454C65;
+}
+
+body #main-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  border-bottom: inset;
+  border-bottom-width: thick;
+}
+
+body #maintitle {
+  text-align: center;
+  background: -webkit-linear-gradient(#94642B, #EFE394);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /*color: linear-gradient(to bottom, #94642B, #EFE394); /*COLOR THIS TO GRADIANT OF TEXT WITHIN IMAGE*/
+
+}
+
+#crumbCounter {
+    background: -webkit-linear-gradient(#94642B, #EFE394);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: x-large;
+}
+
+#purchaseBtn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+    body .subtext {
+        color: #7a755e
+    }
+
+#textBox {
+  width: 40px;
+  height: 20px;
+}
+
+#navbar {
+  overflow: hidden;
+
+  background-image: linear-gradient(to right, #454C65 , #5E637A);
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo { /*QuizQuest Logo------------------------------------------*/
+  width: 234px;
+  height: 87px;
+  background-size: 20%;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #595F76;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #EFE394; 
+  color: black; 
+  border: 2px solid #94642B;
+
+}
+
+.button1:hover {
+  border: 2px solid #EFE394;
+  background-color: #94642B;
+  color: whitesmoke;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-color: #EFE394; 
+  color: black; 
+  border: 2px solid #94642B;
+
+}
+
+.button2:hover {
+  border: 2px solid #EFE394;
+  background-color: #94642B;
+  color: whitesmoke;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.accountUI input{
+  display:block;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+}
+
+.accountUI {
+  margin-left:350px;
+  margin-right: 350px;
+  /*margin:200px;*/
+  align-content: center;
+  text-align: center;
+
+  border:0;
+  box-shadow:0 0 4px rgba(0,0,0,0.3);
+  transition: .3s box-shadow;
+}
+
+.accountUI:hover {
+  box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+hr {
+    width: 30%;
+}
+
+.accountUI #loginbtn {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.accountUI #signupbtn {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+}

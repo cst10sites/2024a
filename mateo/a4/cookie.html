@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+<h2>Cookie Clicker</h2>
+<p>Click the cookie as fast as you can and check your clicks per second!</p>
+<p><strong>CPS Counter:<strong></p>
+<p id="cpsDisplay"></p>
+<button onclick="updateCPS();"><img src="crest.png" alt="cookie" width="250" height="250"></button>
+
+
+
+<hr>
+<h2>HTML/CSS/JS Quiz</h2>
+<p>Click <a href="index.html">here</a> to play the quiz.</p>
+
+<script>
+// global variables
+var nClicks = 0;
+var startTime = new Date().getTime();
+
+function updateCPS() {
+if (nClicks == 0) {
+startTime = new Date();
+
+nClicks = 1;
+
+}
+else {
+
+
+
+var currentTime = new Date().getTime();
+
+var timeElapsed = (currentTime - startTime)/1000;
+
+       var CPS = (nClicks/timeElapsed);
+
+       document.getElementById('cpsDisplay').innerHTML = CPS;
+
+       nClicks = nClicks + 1
+
+}
+}
+
+</script>
+</body>
+</html>

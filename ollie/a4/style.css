@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(255, 198, 26);
+}
+
+
+h2 {
+	color:darkgray;
+	text-align:center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+background-image{
+	href:"https://lovingitvegan.com/wp-content/uploads/2016/05/Vegan-Chocolate-Chip-Cookies-12.jpg";
+}

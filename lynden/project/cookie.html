@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie Clicker - A4</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="cookie.png">
+	<!--create style.css and change to href="style.css"-->
+</head>
+	<body>
+
+		<div id="navbar">
+			<a href="#default" id="logo"><img src="quizquest-nobg.PNG" style="width: 234px; height: 87px;"></a>
+			<div id="navbar-right">
+				<a class="active" href="../Game 2 - One-Question Quiz/index.html">Home</a>
+				<a href="../Game 2 - One-Question Quiz/account.html">Log-In</a>
+				<a href="#about">About</a>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+		<h1 id="maintitle">Cookie Clicker</h1>
+		<p id="rebirthDisplay" class="subtext"></p>
+		<p id="cpsDisplay" class="subtext">Click To Start Playing!</p>
+		<p id="nClicks" class="subtext"></p>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div id="cookie">
+			<input type="image" src="cookie.png" class="zoom" alt="Click" onclick="updateCPS();" width="300" height="300" style="vertical-align: middle;">
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+
+
+		<h1 id="maintitle">The Bakery</h1>
+		<hr>
+		<p class="centerText" style="color: #7a5e63;">Cookie Crumbs can be used to purchase upgrades from the Cookie Bakery!</p>
+		<p id="crumbCounter">Start Clicking To Collect Crumbs!</p>
+
+		<hr style="width: 60%">
+
+		<button onclick="purchase(true, false, false)" class="button button2">Speed</button>
+		<p id="speedPrice"class="subtext">Price:</p>
+		<p id="speedCounter">Owned:</p>
+
+		<hr style="width: 80%; text-align: left; margin-left: 0">
+
+		<button onclick="purchase(false, true, false)" class="button button2">Gamble</button>
+		<p id="gamblePrice"class="subtext">Price:</p>
+		<p id="gambleCounter">Owned:</p>
+
+		<hr style="width: 80%; text-align: left; margin-left: 0">
+
+		<button onclick="purchase(false, false, true)" class="button button2">Rebirth</button>
+		<p id="rebirthPrice"class="subtext">Price:</p>
+		<p id="rebirthCounter">Owned:</p>
+
+
+
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

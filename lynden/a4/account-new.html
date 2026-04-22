@@ -1,0 +1,77 @@
+﻿
+quizquesticon.png
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="quizquesticon.png">
+	<title>Log-In</title>
+	
+</head>
+<body>
+
+	<p onload= onAccountNewHTML = true;></p>
+
+
+	<div id="navbar">
+		<a href="index.html" id="logo"><img src="quizquest-nobg.PNG" style="width: 234px; height: 87px;"></a>
+		<div id="navbar-right">
+			<a class="active" href="index.html">Home</a>
+			<a href="account.html">Log-In</a>
+			<a href="#about">About</a>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+	<img src="quizquest-nobg.PNG" id="main-logo" style="align-content: center;">
+
+	<br>
+	<br>
+
+	<!-- I understand i could use a div tag here and wrap these inputs in it so i don't need to copy paste class="accountUI" for each although i found
+		the effect doesn't work how i want if i do so.-->
+	<div id="loginborder">
+		<div class="accountUI">
+			<input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+			<input type="text" placeholder="Full Name">
+			<input type="text" id="newUser" placeholder="Email">
+			<input type="password" id="newPwrd" placeholder="Password">
+
+			<input type="button" value="Sign up" id="signupbtn" onclick="setCredentials()">
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr>
+
+		<p style="font-size: smaller; text-align: center;">By signing up, you agree to Terms of Service, Privacy Policy and Cookie Policy.</p>
+
+	</div>
+
+
+
+</body>
+</html>

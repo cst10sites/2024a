@@ -1,0 +1,94 @@
+table,td,th {
+	border: 2px solid white;
+	padding: 5px;
+	color:white;
+	background:rgba(0,0,0, 0.5);	
+	font-family: arial;
+
+
+}
+
+body {
+	background-color: black;
+	color:white;
+	background-image: url("https://images.unsplash.com/photo-1503454175556-2d47ed6f1f7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1500px;
+
+}
+
+
+
+h2:hover{
+	background-color: black;
+	padding:7px 5px;
+	border-style: solid;
+	border-color:yellow;
+	
+
+}
+a {
+
+	color:yellow;
+
+
+}
+
+
+
+
+a:hover{
+	color:white;
+	padding:10px 15px;
+	border-style: solid;
+	border-color: yellow;
+}
+div.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+  padding:10px;
+  font-family:arial;
+
+  
+}
+div.topnav #moreLinks {
+  display: none; /* to hide by default */
+  /* display: block to show by default */
+}
+div.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+div.topnav a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+div.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.content {
+    padding: 25px;
+    color:white;
+
+
+
+  background:rgba(0,40,70, 0.5);
+    /* red, green, blue:0...255 alpha: 0...1 */
+}
+
+
+
+
+
+

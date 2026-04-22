@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3>Quiz</h3>
+<!--Example 2-->
+<form>
+    <label>What code is used for an image in HTML?</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>&lt;Img&gt;</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;Image&gt;</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;addimage&gt;</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+
+<h3>Dropdown Menu</h3>
+<!--Example 3: code next class-->
+<form>
+    <label>What is the code to add a line break</label>
+    <!-- reminder: need id and value attributes for JavaScript-->
+    <select id="carOption">
+        <option value="LB">&lt;LB&gt;</option>
+        <option value="Break">&lt;Break&gt;</option>
+        <option value="BR">&lt;Br&gt;</option>
+        <option value="Lineb">&lt;Lineb&gt;</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkCar();">
+    <input type="reset">
+</form>
+
+<p id="carDisplay">2023&copy;</p>
+
+<P>Click <a href=file:///C:/Users/2373476/OneDrive%20-%20Board%20of%20Education%20of%20SD%2039%20(Vancouver)/CST%2010/html/a4/cookie/cookie.html>here </a> to play cookie clicker</P>
+
+<!---JavaScript-->
+<script>
+
+// Example 2: radio button
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Img is correct!");
+    }
+    else {
+        alert("Try again!");
+    }
+}
+
+
+function checkCar() {
+    var car = document.getElementById("carOption").value;
+    // alert(car);
+    //document.getElementById('carDisplay').innerHTML = "Mr. Kam does not drive a " + car + ".";
+    if (car == "BR" || car == "BMW") { 
+        // either Porsche or BMW (|| means or)
+        alert("It is <br>!" + "!");
+    }
+else    
+alert("Try again!")
+
+
+}
+
+
+
+</script>
+</body>
+</html>
