@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assigment 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks"></div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <!--content-->
+      <div class="content">
+        <h1>Commonly used tags outside the &lt;body&gt;</h1>
+        <table>
+          <tr>
+            <th>Tags outside the body</th>
+            <th>Definition</th>
+            <th>Examples</th>
+          </tr>
+          <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Tells the browser it's HTML </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;html lang="en"&gt;</td>
+            <td>The language of the website</td>
+            <td> This page is english</td>
+          </tr>
+          <tr>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+            <td>Metadata of a HTML document.</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&lt;title&gt;&lt;/title&gt;</td>
+            <td>Adds a title to the website's tab in the browser.</td>
+            <td>
+             The Title
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;style&gt;&lt;/style&gt;</td>
+            <td>Makes the website cooler</td>
+            <td>Background the look of this website</td>
+          </tr>
+          <tr>
+            <td>&lt;link rel="stylesheet" href="link"&gt;</td>
+            <td>Code that defines the looks of your webpage.</td>
+            <td>The homepage and this page point to a common style.css file that controls the look of these pages.</td>
+          </tr>
+          <tr>
+            <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
+            <td>Creates an image next to the title in the browser's tab.</td>
+            <td>
+              This websites logo
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

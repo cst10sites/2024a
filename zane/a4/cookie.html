@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Linking to the created style.css -->
+
+<style>
+  /* Additional CSS can be placed here if needed */
+</style>
+
+</head>
+<body>
+
+<h2>HTML/CSS Quiz</h2>
+<form id="quizForm">
+  <p>What does HTML stand for</p>
+  <input type="radio" name="htmlAnswer" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
+  <input type="radio" name="htmlAnswer" value="Hyperlinks and Text Markup Language"> Hyperlinks and Text Markup Language<br>
+  <input type="radio" name="htmlAnswer" value="Home Tool Markup Language"> Home Tool Markup Language<br>
+  <input type="radio" name="htmlAnswer" value="None of the above"> None of the above<br><br>
+  
+  <p>Which CSS property is used to control the text size?</p>
+  <input type="radio" name="cssAnswer" value="text-size"> text-size<br>
+  <input type="radio" name="cssAnswer" value="font-size"> font-size<br>
+  <input type="radio" name="cssAnswer" value="text-style"> text-style<br>
+  <input type="radio" name="cssAnswer" value="font-style"> font-style<br><br>
+  
+  <input type="button" value="Submit" onclick="checkAnswer()">
+  <input type="reset" value="Reset">
+</form>
+
+<div id="answer"></div>
+
+<hr>
+<h2>Cookie Clicker</h2>
+<p>Click <a href="index.html">here</a> to play the cookie clicker.</p>
+
+<script>
+  function checkAnswer() {
+    var htmlAnswer = document.querySelector('input[name="htmlAnswer"]:checked');
+    var cssAnswer = document.querySelector('input[name="cssAnswer"]:checked');
+    var answerDisplay = document.getElementById('answer');
+    
+    if (htmlAnswer && htmlAnswer.value === "Hyper Text Markup Language" && cssAnswer && cssAnswer.value === "font-size") {
+      answerDisplay.textContent = "Both answers are correct!";
+    } else {
+      answerDisplay.textContent = "Incorrect. Try again!";
+    }
+  }
+</script>
+</body>
+</html>

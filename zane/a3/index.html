@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assigment 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="head.html">Common used tags outside the body</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+    </div>
+    <div class="content">
+      <h1>HTML/CSS Guide</h1>
+      <h2>Common HTML Tags inside &lt;body&gt;</h2>
+      <table>
+        <tr>
+          <th style="width: 25%">&lt;body&gt; Tags</th>
+          <th>Definition</th>
+          <th style="width: 50%">Examples</th>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;&lt;/p&gt;</td>
+          <td>Makes a paragraph.</td>
+          <td>
+            <p>This is a paragraph.</p>
+            <p>Hello paragraph 1.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;img src="link" alt="pic"&gt;</td>
+          <td>An Image.</td>
+          <td>
+            <img style="width:40%" src="r.jpeg" alt="Coop">
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;&lt;/h1&gt;... &lt;h6&gt;&lt;/h6&gt;</td>
+          <td>A header.</td>
+          <td>
+            <h1>Header</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;ol&gt; <br>&lt;li&gt;... &lt;/li&gt; <br>... <br>&lt;/ol&gt; </td>
+          <td>Makes an ordered list.</td>
+          <td>
+            <ol>
+              <li> one </li>
+              <li> two </li>
+              <li> three </li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;table&gt; <br>&lt;tr&gt; <br> &lt;th&gt;... &lt;/th&gt; <br> ... <br> &lt;/tr&gt; <br>&lt;tr&gt; <br> &lt;td&gt;... &lt;/td&gt; <br> ... <br> &lt;/tr&gt; <br> ... <br> &lt;/table&gt; </td>
+          <td>Creates a table.</td>
+          <td>
+            <table>
+              <tr>
+                <th>head 1</th>
+                <th>head 2</th>
+                <th>head 3</th>
+              </tr>
+              <tr>
+                <td>Stuff</td>
+                <td>BLA</td>
+                <td>Blehh</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;iframe&gt;&lt;/iframe&gt;</td>
+          <td>Displays webage</td>
+          <td>
+            <iframe width="560" height="315" src="https://en.wikipedia.org/wiki/Zanesville%2C_Ohio" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;div&gt;&lt;/div&gt;</td>
+          <td>Creates sections in your website</td>
+          <td>The navbar above is created using divs</td>
+        </tr>
+        <tr>
+          <td>&lt;a href="link"&gt;&lt;/a&gt;</td>
+          <td>Makes a hyperlink.</td>
+          <td>Click <a href="https://mrkam-student-websites.on.drv.tw/public/lynden/a2/">here</a> for Lynden's Cooking Paradise. </td>
+        </tr>
+        <tr>
+          <td>&lt;strong&gt;&lt;/strong&gt;</td>
+          <td>Makes text bold.</td>
+          <td>
+            <strong>BOOM.</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;em&gt;&lt;/em&gt;</td>
+          <td>Emphasizes the text.</td>
+          <td>
+            <em> Important Stuff</em>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;br&gt;</td>
+          <td>Line break.</td>
+          <td>Hello <br> there is a break here. </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>
