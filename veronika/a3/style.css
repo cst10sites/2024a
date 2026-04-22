@@ -1,0 +1,56 @@
+body {
+  font-family: Optima, sans-serif;
+  margin: 50px 100px;
+  padding: 25px;
+  color: white;
+  background-color: #325D79;
+}
+
+div.topnav {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+div.topnav #moreLinks {
+  display: none;
+}
+
+div.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+div.topnav a.icon:hover {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+div.topnav a.icon {
+  background: #f2f2f2;
+  color: #f26627;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+a {
+  color:#f26627;
+}
+
+table, th, td {
+  border: 2px solid #98D7D1;
+  text-align: center;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}

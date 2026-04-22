@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <div id="moreLinks">
+        <a href="../Lesson1/index.html">Lesson 1</a>
+        <a href="../Lesson2/index.html">Lesson 2</a>
+        <a href="../Lesson3/index.html">Lesson 3</a>
+        <a href="../Lesson4/index.html">Lesson 4</a>
+      </div>
+      <a class="icon" onclick="showHideMenu()">★</a>
+    </div>
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML tags <a href="index.html">outside</a> &lt;body&gt; </h2>
+    <table style="width: 100%">
+      <tr>
+        <!--table row with table header-->
+        <th>Tag</th>
+        <th style="width: 60%">Definition</th>
+        <th>Examples</th>
+      </tr>
+      <tr>
+        <!--th for first row, td for subsequent rows-->
+        <td>&lt;!DOCTYPE html&gt;</td>
+        <td>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;html lang="en"&gt;</td>
+        <td>A tag that specifies what languange the website is written in.</td>
+        <td>&lt;html lang="en"&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+        <td>The meta tag specifies which character set a website is written with.</td>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;&lt;/title&gt;</td>
+        <td>The title of the tab</td>
+        <td>
+          <img alt="jpg" style="width: 250px;" src="Capture.JPG">
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;style&gt;</td>
+        <td>Inside &lt;head&gt;, internal CSS means the CSS is included on the page, wrapped in style tags.</td>
+        <td>&lt;style&gt; #wrapper { width:960px; margin:0 auto; } &lt;/style&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;link rel="stylesheet" href="your-file-here.css"&gt;</td>
+        <td>Inside &lt;head&gt;, external CSS refers to a file location.</td>
+        <td>&lt;a target="_blank" href="https://www.w3schools.com/html/default.asp"&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;Link rel="icon" type="image/x-icon" href=""&gt;</td>
+        <td>Favicon is the image beside the title on the browser tab. Code is inside &lt;head&gt;, above &lt;style&gt;.</td>
+        <td>
+          <img alt="jpg" style="width: 250px;" src="Capture.JPG">
+        </td>
+      </tr>
+    </table>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

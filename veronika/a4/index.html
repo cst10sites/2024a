@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="content">
+<h2>Mini Quiz!</h2>
+<h3>HTML & CSS</h3>
+<p><strong>Click <a href="cookie.html">here</a> to go back to cookie clicker.</strong></p>
+<br>
+
+<p>Choose the HTML element for the largest heading:</p>
+<form>
+	<input type="radio" name="group"> 
+	<label>&lt;label></label>
+<br>
+	<input type="radio" name="group" id="correctAnswer">
+	<label>&lt;h1></label>
+<br>
+	<input type="radio" name="group">
+	<label>&lt;h3></label>
+<br>
+<br>
+	<input type="button" value="submit" onclick="checkRadio();">
+	<input type="reset">
+
+</form>
+
+<p>What CSS is correct for choosing a background colour?</p>
+<form>
+	<select id="colorOption">
+		<option value="Background-colour:">Background-colour:</option>
+		<option value="background:">Background:</option>
+		<option value="colour:">Colour:</option>
+		<option value="background-family:">Background-family:</option>
+	</select>
+	<br><br>
+	<input type="button" value="OK" onclick="checkColor();">
+	<input type="reset">
+</form>
+
+<p id="colorDisplay">2023&copy;</p>
+
+<p>What 2 combined create a link that opens a new tab?</p>
+<form>
+    <!--Need to add multiple id for JavaScript to work-->
+    <!--choice 1-->
+    <input type="checkbox" id="ahref">
+    <label>&lt;a href="url">&lt;/a></label>
+    <br>
+    <!--choice 2-->
+    <input type="checkbox" id="a">
+    <label>&lt;a>&lt;/a></label>
+    <br>
+    <!--choice 3-->
+    <input type="checkbox" id="linkhref">
+    <label>&lt;url href="url">&lt;/url></label>
+    <br>
+    <!--choice 4-->
+    <input type="checkbox" id="target">
+    <label>target="_blank"</label>
+    <br>
+    <!--button onclick="checkSeuss();">Answer</button-->
+    <!--input type="button" is recommended for forms because button resets-->
+    <input type="button" value="OK" onclick="checkLink();">
+    <input type="reset">
+</form>
+
+<p>What did you think of the quiz?</p>
+<form>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">Type here.</textarea>
+    <br><!--no input for textarea-->
+    <input type="button" value="Submit" onclick="submitForm();"> 
+    <input type="reset"><br> <!--This is a special type of button that resets all values in the form that it belongs to-->
+    
+</form>
+</div>
+<script>
+
+// Radio button
+function checkRadio() {
+	var correctAnswerSelected = document.getElementById('correctAnswer').checked;
+	// alert(correctAnswerSelected); // true or false
+	if (correctAnswerSelected == true) {
+		alert("Correct!");
+	}
+	else {
+		alert("Sorry, try again.");
+	}
+
+}
+// Dropbox
+function checkColor() {
+	var color = document.getElementById("colorOption").value 
+	// alert(car);
+	document.getElementById("colorDisplay").innerHTML = "No, " + color + " is not the right answer.";
+	
+	if (color == "Background-colour:") {
+		document.getElementById("colorDisplay").innerHTML = "Yes! " + color + " is right!";
+	}
+}
+
+// Checkbox
+function checkLink() {
+    var ahref = document.getElementById("ahref").checked; // correct
+    var a = document.getElementById("a").checked;
+    var linkhref = document.getElementById("linkhref").checked;
+    var target = document.getElementById("target").checked; // correct
+
+    if (ahref == true && target == true && a == false && linkhref == false) {
+        // && means and (all conditions need to be true)
+        alert("Correct!");
+    }
+    else {
+        alert("Try again!");
+    }
+}
+
+// Text box
+function submitForm() {
+	alert("Thanks, have a nice day!")
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="dizzy.ico">
+    <title>Assingment 3 </title>
+    <!--External CSS: style.css-->
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks"></div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <!--content-->
+      <div class="content">
+        <h1 style="color:black;">Tables</h1>
+        <h1 style="color:black;"> Common html tags outside the body </h1>
+        <p style="color:black;"></p>Click <a class="btn" href="../a3/index.html"> here </a>
+        <p style="color:black;"> to return to the homepage </p>
+        <table style="color:black; padding: 10px; width: 100%;">
+          <tr>
+            <th>Tag</th>
+            <th>Definition</th>
+            <th> Example </th>
+          </tr>
+          <tr>
+            <!-- is for subcequent rows-->
+            <td> &lt;!DOCTYPEhtml&gt; </td>
+            <td> an instruction to the web browser about what version of HTML the page is written in</td>
+            <td>no examples</td>
+          </tr>
+          <tr>
+            <td>&lt; html lang="en"&gt; </td>
+            <td>specifies the language of the element's content. </td>
+            <td>he lang attribute specifies the language of the element's content. Common examples are "en" for English, "es" for Spanish, "fr" for French, and so on</td>
+          </tr>
+          <tr>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+            <td>provides the character encoding used for the writing system</td>
+            <td>no examples</td>
+          </tr>
+          <tr>
+            <td>&lt;title&gt;&lt;/title&gt;</td>
+            <td> an HTML code tag that allows you to give a web page a title </td>
+            <td>
+              <img src="wstar.png" alt="pic">
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;style&gt;&lt;/style&gt;</td>
+            <td> used to define style information (CSS) for a document</td>
+            <td>&lt;body style="background-color:black;"&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;link rel ="icon" type = "image/x-icon" href="dizzy.ico"&gt;</td>
+            <td>this tag adds a favicon </td>
+            <td>
+              <img src="wfavicon.png" alt="pic">
+            </td>
+          </tr>
+          <tr>
+            <td>&lt;link&gt;&lt;/link&gt;</td>
+            <td>defines the relationship between the current document and an external resource</td>
+            <td>The homepage and this page point to a common style.css file that controls the look of these pages.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

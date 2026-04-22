@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 4</title>
+<link rel="stylesheet" type="text/css" href="">
+<!--create style.css and change to href="style.css"-->
+<h2>HTML/CSS/JS Quiz</h2>
+<form>
+<!--ask at least one question related to HTML/CSS/JS-->
+</form>
+</head>
+<body>
+
+<form>
+    <label>What does HTML stand for?</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+     <!--name="group" allow us to select ONE within "group"-->
+    <label>Hypertext Markup Language</label>
+    <br>
+    <input type="radio" name="group">
+    <label>Hyperlinks and Text Markup Language</label>
+    <br>
+    <input type="radio" name="group">
+    <label>HyperText Makeup Language</label>
+    <br>
+    <input type="radio" name="group">
+    <label>HyperTools Markup Language</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+
+<form>
+    <label>What does CSS stand for?</label>
+    <br>
+    <input type="radio" name="group">
+    <label>Colour Style Sheets</label>
+    <br>
+    <input type="radio" name="group">
+    <label>Computer Style Sheets</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>Cascading Style Sheets</label>
+    <br>
+    <input type="radio" name="group">
+    <label>Creative Style Sheets</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+<form>
+    <label>What is JavaScript for ?</label>
+    <br>
+    <input type="radio" name="group">
+    <label>to specify the layout of web pages</label>
+    <br>
+    <input type="radio" name="group">
+    <label>to define the content of web pages
+    <br>
+    <input type="radio" name="group" >
+    <label> i don't know</label>
+    <br>
+    <input type="radio" name="group"id="correctAnswer">
+     <!--name="group" allow us to select ONE within "group"-->
+    <label>to program the behavior of web pages</label>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+
+
+
+<!---JavaScript-->
+<script>
+
+// Example 2: radio button
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Correct!!");
+    }
+    else {
+        alert("Wrong! try again!");
+    }
+}
+
+// Example 3: dropbox
+function checkCar() {
+    var car = document.getElementById("carOption").value;
+    // alert(car);
+    document.getElementById('carDisplay').innerHTML = "The right answer is not " + car + ".";
+    if (car == "Hypertext Markup Language") { 
+        // either Porsche or BMW (|| means or)
+        alert("Correct! the answer is  " + car + "!");
+    }
+}
+
+// Example 4: checkbox
+
+function checkSeuss() {
+    var ham = document.getElementById("ham").checked; // correct
+    var milk = document.getElementById("milk").checked;
+    var curry = document.getElementById("curry").checked;
+    var eggs = document.getElementById("eggs").checked; // correct
+
+    if (ham == true && eggs == true && milk == false && curry == false) {
+        // && means and (all conditions need to be true)
+        alert("Correct");
+    }
+    else {
+        alert("Try again!");
+    }
+}
+
+
+
+</script>
+
+<hr>
+<h2>Cookie Clicker</h2>
+<!--possibly replace quiz.html with index.html-->
+<p>Click <a href="cookie.html">here</a> to play the cookie clicker.</p>
+
+<script>
+</script>
+</body>
+</html>

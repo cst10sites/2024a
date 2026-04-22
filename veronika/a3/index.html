@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="head.html">Head</a>
+      <div id="moreLinks">
+        <a href="../Lesson1/index.html">Lesson 1</a>
+        <a href="../Lesson2/index.html">Lesson 2</a>
+        <a href="../Lesson3/index.html">Lesson 3</a>
+        <a href="../Lesson4/index.html">Lesson 4</a>
+      </div>
+      <a class="icon" onclick="showHideMenu()">★</a>
+    </div>
+    <h1>HTML/CSS Guide</h1>
+    <h2>Common HTML tags <a href="head.html">inside</a> &lt;body&gt; </h2>
+    <table style="width: 100%">
+      <tr>
+        <!--table row with table header-->
+        <th>Tag</th>
+        <th style="width: 50%">Definition</th>
+        <th>Examples</th>
+      </tr>
+      <tr>
+        <!--th for first row, td for subsequent rows-->
+        <td>&lt;h1&gt;</td>
+        <td>The &lt;h1&gt; to &lt;h6&gt; tags are used to define HTML headings.</td>
+        <td>
+          <h1>This is the biggest heading size</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>The &lt;p&gt; tag defines a paragraph.</td>
+        <td>
+          <p>this is a paragraph</p>
+        </td>
+      </tr>
+      <tr>
+        <td>&</td>
+        <td>Characters that are reserved to html will not be dispalyed as text. Use the ampersand entity to display them.</td>
+        <td>&lt; &amp;</td>
+      </tr>
+      <tr>
+        <td>&lt;ul&gt;</td>
+        <td>The &lt;ul&gt; tag defines an unordered (bulleted) list. The &lt;ul&gt; tag together with the &lt;li&gt; tag creates unordered lists. </td>
+        <td>
+          <ul>
+            <li>Unordered list (i.e bullet list)</li>
+            <li>Ordered list (i.e numbered list)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</td>
+        <td>
+          <a href="https://www.w3schools.com">Visit W3Schools.com</a>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;</td>
+        <td>This tag makes a word bold in a paragraph.</td>
+        <td>Here's an <strong>example.</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;em&gt;</td>
+        <td>This tag makes a word italicised in a paragraph.</td>
+        <td>Here's an <em>example.</em>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;</td>
+        <td>The &lt;br&gt; tag inserts a single line break.</td>
+        <td>line <br> break </td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>The &lt;div&gt; tag defines a division or a section in an HTML document.</td>
+        <td>No example</td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>The &lt;img&gt; tag is used to embed an image in an HTML page. It has two required attributes; scr and alt.</td>
+        <td>
+          <img alt="Tiger" style="width: 250px;" src="Tiger.JPG">
+        </td>
+      </tr>
+    </table>
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML Quiz!</title>
+   <link rel="icon" type="image/x-icon" href="dizzy.ico">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>HTML Quiz </h1>
+<div style="font-size:175%;">
+<form>
+    <label>Select the correct "HTML":</label>
+    <br>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>Hyper Text Markup Language</label>
+    <br>
+    <br>
+    <input type="radio" name="group">
+    <label>Hoolahoop Toliet Market Lithium</label>
+    <br>
+    <br>
+    <input type="radio" name="group">
+
+    <label> Hyper Text Moo language</label>
+    <br>
+    <br>
+    <input type="radio" name="group">
+ 
+    <label>Hotdog Toot Makeup Lollipop</label>
+    <br>
+    <br>
+    <input type="button" value="Submit" onclick="checkRadio();">
+    <input type="reset">
+</form>
+</div>
+<br>
+<div style="font-size:125%;">
+<form>
+    <label>What tags are present in &lt;table&gt;</label>
+    <select id="tableTagOption">
+        <option value="tr">tr</option>
+        <option value="style">style</option>
+        <option value="th">th</option>
+        <option value="float">float</option>
+    </select>
+    <br>
+    <input type="button" value="OK" onclick="checkTable();">
+    <input type="reset">
+</form>
+</div>
+<p id="tableDisplay">2023&copy;</p>
+
+<hr>
+<p style="font-size:125%;">Click <a href="cookie.html">here</a> to click the cookie!</p>
+    <script>
+        function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        alert("Correct!");
+    }
+    else {
+        alert("Wrong, try again next time!");
+    }
+}
+function checkTable() {
+    var checkTable = document.getElementById("tableTagOption").value;
+    if (checkTable == "style" || checkTable == "float") { 
+        alert("incorrect answer, try again");
+    }
+    else {
+        document.getElementById('tableDisplay').innerHTML 
+        alert("Correct answer! tr and th tags are used in tables in html.");
+    
+    }
+}
+    </script>
+</body>
+</html>

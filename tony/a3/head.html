@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="Utf-8">
+    <title>HTML/CSS Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="reading_education_knowledge_learning_library_book.ico">
+</head>
+
+<body>
+    <div>
+        <div class="topnav"> <a href="index.html">Home</a>
+            <div id="moreLinks"> <a href="index.html">Body Html</a> </div> <a class="icon" onclick="showHideMenu()">...</a>
+        </div>
+        <div class="content">
+            <h1>HTML/CSS Guide</h1>
+            <h2>Common HTML Tags <strong style="color: red">outside</strong> &lt;body&gt;</h2>
+            <p>click <a href="index.html">here</a> to go to index.html</p>
+            <table style="width: 80%;">
+                <tr>
+                    <!--table row with table header-->
+                    <th style="width: 33%">Tag</th>
+                    <th style="width: 33%">Definition</th>
+                    <th style="width: 33%">Examples</th>
+                </tr>
+                <tr>
+                    <!-- th for first row, td for subsequent rows-->
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>An "information" to the browser about what is the document type</td>
+                    <td>No examples*</td>
+                </tr>
+                <tr>
+                    <!-- th for first row, td for subsequent rows-->
+                    <td>&lt;html lang="en"&gt;</td>
+                    <td>Specifies the language of the element's content.</td>
+                    <td>This page is set to “en” for English. This tag helps websites such as Google Translate know the default language for this page is English.</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta charset="UTF-8"&gt;</td>
+                    <td>Specify the character encoding for the HTML document.</td>
+                    <td>No examples*</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;&lt;/title&gt;</td>
+                    <td>title on the webpage</td>
+                    <td><img alt="title" src="title.png" style="width:50%"></td>
+                </tr>
+                <tr>
+                    <td>&lt;style&gt;</td>
+                    <td>Internal CSS</td>
+                    <td>&lt;style&gt;div.content {
+									  padding: 25px;
+									  color: white;
+									  background: rgba(0,0,0,0.7);}
+									  &lt;/style&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;link rel="stylesheet" href=""&gt;</td>
+                    <td>External CSS</td>
+                    <td>The homepage and this page point to a common style.css file that controls the look of these pages.</td>
+                </tr>
+                <tr>
+                    <td>&lt;link rel="icon" type="image/x-icon" href=""&gt;</td>
+                    <td>Favicon</td>
+                    <td><img alt="title" src="ico.png" style="width:25%"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        function showHideMenu() {
+          var links = document.getElementById("moreLinks");
+          if (links.style.display == "block") {
+            links.style.display = "none"; // hide
+          } else {
+            links.style.display = "block"; // show
+          }
+        }
+    </script>
+</body>
+
+</html>

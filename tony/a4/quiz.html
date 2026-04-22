@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML/CSS/JS Quiz</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/x-icon" href="cookie.ico">
+<!--create style.css and change to href="style.css"-->
+</head>
+<body>
+<h2>HTML/CSS/JS Quiz</h2>
+<form>
+    <label>What is the correct HTML element for inserting a line break?</label>
+    <br>
+    <input type="radio" name="group" id="correctAnswer">
+    <!--name="group" allow us to select ONE within "group"-->
+    <label>&lt;br&gt;</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;lb&gt;</label>
+    <br>
+    <input type="radio" name="group">
+    <label>&lt;break&gt;</label>
+    <br>
+    <label>How can you set the width of a picture to 300px</label>
+    <br>
+    <!--Need to add multiple id for JavaScript to work-->
+    <!--choice 1-->
+    <input type="checkbox" id="correctAnswer1">
+    <label>&lt;img alt="photo"style="width: 300px;"src=photo.png&gt;</label>
+    <br>
+    <!--choice 2-->
+    <input type="checkbox" id="wrongAnswer1">
+    <label>&lt;img alt="photo" style="width: 300;" src=photo.png&gt;</label>
+    <br>
+    <!--choice 3-->
+    <input type="checkbox" id="correctAnswer2">
+    <label>&lt;img alt="photo" width="300" src=photo.png&gt;</label>
+    <br>
+    <!--choice 4-->
+    <input type="checkbox" id="wrongAnswer2">WQEF
+    <label>&lt;img alt="photo"style="width = 300px;"src=photo.png&gt;</label>
+    <br>
+    <!--button onclick="checkSeuss();">Answer</button-->
+    <!--input type="button" is recommended for forms because button resets-->
+    <input type="button" value="Submit" onclick="display(checkSeuss(),checkRadio());">
+    <input type="reset">
+    
+</form>
+
+    <p id="Display"></p>
+    <hr>
+    <h2>Cookie Clicker</h2>
+    <p>Click <a href="cookie.html">here</a> to play CookieClicker.</p>
+<script>
+function checkRadio() {
+    var correctAnswerSelected = document.getElementById("correctAnswer").checked;
+    // alert(correctAnswerSelected); // true or false
+    if (correctAnswerSelected == true) {
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+function checkSeuss() {
+    var c1 = document.getElementById("correctAnswer1").checked; // correct
+    var w1 = document.getElementById("wrongAnswer1").checked;
+    var c2 = document.getElementById("correctAnswer2").checked;
+    var w2 = document.getElementById("wrongAnswer2").checked; // correct
+
+    if (c1 == true && c2 == true && w1 == false && w2 == false) {
+       return 1;
+    }
+    else {
+        return 0;
+    }
+}
+function display(result1,result2){
+    if((result1 + result2) == 2){
+        document.getElementById("Display").innerHTML = "You are an EXPERT";
+    }
+    else{
+        document.getElementById("Display").innerHTML = "Try again";
+    }
+}
+</script>
+</body>
+</html>

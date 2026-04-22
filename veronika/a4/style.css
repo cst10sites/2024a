@@ -1,0 +1,17 @@
+body {
+	background-image: url("pattern.png");
+    font-family: Helvetica, Arial;
+    margin: 50px 100px;
+    text-align: center;
+}
+
+div.content {
+        border-style: double;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        border-width: 5px;
+        border-radius: 200px;
+        background: #fff;
+      }

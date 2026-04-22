@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assingment 3 tables</title>
+
+          <!--External CSS: style.css-->
+
+          <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <div>
+      <!-- navbar -->
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div id="moreLinks">
+          <a href="../Lesson 1/index.html">Lesson 1</a>
+          <a href="../Lesson 2/index.html">Lesson 2</a>
+          <a href="../Lesson 3/index.html">Lesson 3</a>
+        </div>
+        <a class="icon" onclick="showHideMenu()">...</a>
+      </div>
+      <!--content-->
+      <div class="content">
+        <h1 style ="color: black;">Tables</h1> <p>Click<a class= "btn" href="../a3/index.html">here</a> to return to the homepage </p>
+
+
+        <table style="width:80%">
+          <tr>
+            <th style="width:33%">Tag</th>
+             <th style="width:33%">Definition</th>
+              <th style="width:34%">Example </th>
+
+
+
+
+          </tr>
+          <tr> <!-- is for subcequent rows-->
+            <td> </td>
+            <td> </td>
+            <td></td>
+
+          </tr>
+           <tr> 
+            <td></td>
+            <td> </td>
+            <td></td>
+
+          </tr>
+          <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+
+         </tr>
+         <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+
+         </tr><tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+
+         </tr><tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+
+         </tr>
+         <tr> 
+            <td></td>
+            <td></td>
+            <td></td>
+
+         </tr>
+        </table>
+       
+
+      </div>
+    </div>
+    <!--JavaScript will be explored later-->
+    <script>
+      function showHideMenu() {
+        var links = document.getElementById("moreLinks");
+        if (links.style.display == "block") {
+          links.style.display = "none"; // hide
+        } else {
+          links.style.display = "block"; // show
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/*CSS Document*/
+body {
+  font-family: Arial, Helvetica;
+  margin: 100px 100px;
+  background-image: url('https://media.istockphoto.com/vectors/cookie-seamless-pattern-background-business-concept-vector-chip-vector-id913098158?k=6&m=913098158&s=170667a&w=0&h=Vs4iFXhds1JJ_EUohB81EC5WibjbNuWwhJ51l6cQJoc=');
+}
+div {
+  height: 600px;
+  width: 100%;
+  background-color: whitesmoke;
+}
